@@ -19,3 +19,10 @@ node_modules/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Local evaluations and comparisons (never publish real-session reports)
+/docs/comparison*.md
+/local-reports/
+
+# Default go build output
+/ai-session
