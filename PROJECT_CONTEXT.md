@@ -1,9 +1,10 @@
 # Project Context
 
-AI Session Reader is a planned local CLI for searching Claude Code and Codex
+AI Session Reader is a Go local CLI for searching Claude Code and Codex
 sessions and loading compact transcripts into another AI session.
 
-Read README.md for the current scope and roadmap. No CLI is implemented yet.
+Read README.md for the current scope and roadmap. The initial CLI is implemented in cmd/ai-session; provider parsing lives in internal/session.
+Run go test -race ./... and go vet ./... before handing off changes.
 
 ## Development principles
 
@@ -13,7 +14,7 @@ Read README.md for the current scope and roadmap. No CLI is implemented yet.
 - Search original content, but compact large tool bodies for context inheritance.
 - Preserve provenance and expose unsupported or skipped records via diagnostics.
 - Use synthetic test fixtures; never commit actual conversations or credentials.
-- Implementation language and licensing remain undecided.
+- Implementation language: Go 1.24+, standard library only. Licensing remains undecided.
 
 ## Workspace instructions
 
