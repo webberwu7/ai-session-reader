@@ -1,0 +1,21 @@
+# Local session data and credentials
+.env
+.env.*
+!.env.example
+.ai-session/
+sessions/
+exports/
+*.jsonl
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+
+# Generated artifacts
+/dist/
+/build/
+/bin/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
